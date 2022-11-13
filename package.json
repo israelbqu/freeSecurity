@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open --browser electron --e2e"
+    "cy:run": "cypress open --browser electron --e2e"
   },
   "keywords": [
     "cypress",

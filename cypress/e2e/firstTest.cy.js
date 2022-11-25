@@ -1,3 +1,5 @@
+var username = 'jmendez'
+
 describe("Este será mi set de pruebas", () => {
   it("CP01 - Este es mi primera prueba", () => {
     expect(true).to.equal(true);
@@ -21,7 +23,7 @@ describe("Este será mi set de pruebas", () => {
   it("Login", () => {
     cy.visit("/")
       .get('[name="username"]')
-      .type("jmendez")
+      .type(username)
       .get('[name="password"]')
       .type("12345678")
       .get(".btn")
@@ -29,6 +31,6 @@ describe("Este será mi set de pruebas", () => {
       .should("be.visible")
       .click()
       .get(".alert")
-      .should("contain", "Welcome");
+      .should("contain", "Welcome back " + username);
   });
 });

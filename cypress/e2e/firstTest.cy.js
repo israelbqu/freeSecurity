@@ -15,7 +15,7 @@ describe("Este será mi set de pruebas", () => {
       .get('[name="birthdate"]')
       .type("2001-07-21");
   });
-  it.only("Login",()=>{
+  it("Login",()=>{
     cy.visit('/')
         .get('[name="username"]').type('jmendez')
         .get('[name="password"]').type('12345678')

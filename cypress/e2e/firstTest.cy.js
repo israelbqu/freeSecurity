@@ -15,11 +15,20 @@ describe("Este será mi set de pruebas", () => {
       .get('[name="birthdate"]')
       .type("2001-07-21");
   });
-  it("Login",()=>{
-    cy.visit('/')
-        .get('[name="username"]').type('jmendez')
-        .get('[name="password"]').type('12345678')
-        .get('.btn').contains("Log In").should('be.visible').click()
-        .get('.alert').should('contain','Welcome')
-  })
+  it("Registrando un usuario", () => {
+    cy.visit("/");
+  });
+  it("Login", () => {
+    cy.visit("/")
+      .get('[name="username"]')
+      .type("jmendez")
+      .get('[name="password"]')
+      .type("12345678")
+      .get(".btn")
+      .contains("Log In")
+      .should("be.visible")
+      .click()
+      .get(".alert")
+      .should("contain", "Welcome");
+  });
 });

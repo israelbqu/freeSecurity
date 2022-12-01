@@ -7,8 +7,8 @@ describe("Este será mi set de pruebas", () => {
   it("CP02 - Esta es mi segunda prueba", () => {
     expect(false).to.equal(false);
   });
-  it("Localizando elementos", () => {
-    cy.visit("/");
+  it("CP03 - Localizando elementos", () => {
+//    cy.visit("/");
     cy.get(".nav-link")
       .contains("Register")
       .click()
@@ -17,7 +17,7 @@ describe("Este será mi set de pruebas", () => {
       .get('[name="birthdate"]')
       .type("2001-07-21");
   });
-  it("Registrando un usuario", () => {
+  it("CP04 - Registrando un usuario", () => {
     cy.visit("/");
   });
   it("Login", () => {

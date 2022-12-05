@@ -1,5 +1,6 @@
 var username = "jmendez"
 
+
 describe('Pruebas Free Security', () => {
     it.only('CP02 - Israel', () => {
         cy.viewport(390, 8440)

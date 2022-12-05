@@ -5,6 +5,13 @@ Password: #loginpassword
 buttonLogin2: [onclick="logIn()"]
 
 describe - Descripción del set de pruebas, "simulando" que son los ESCENARIOS de Prueba 
+<<<<<<< HEAD
+
+=======
+*/
+
+/*
+>>>>>>> 475b1658201bff91a798bdc862ffe94aec98171d
 1. Ingresar a la liga (www.)
 2. Dar clic en el enlace de Registro
 3. Registrar Datos Personales

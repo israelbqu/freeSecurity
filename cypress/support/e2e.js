@@ -18,6 +18,6 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-beforeEach(() => {
+/*beforeEach(() => {
     cy.visit('https://vamonos-finance.herokuapp.com/')
-  })
+  })*/
